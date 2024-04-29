@@ -1,0 +1,113 @@
+.header {
+    &__top {
+        padding: 9px 0;
+        background: rgb(69, 79, 91);
+
+        .header__block {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+        }
+    }
+
+    &__cap {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 12%;
+    }
+
+    &__top__link {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 12%;
+        text-align: left;
+        text-decoration-line: underline;
+        display: inline-block;
+        margin-left: 300px;
+    }
+}
+
+.header__bottom {
+    padding: 20px 0;
+    box-shadow: inset 0px -1px 0px 0px rgb(196, 205, 213);
+    background: rgb(255, 255, 255);
+
+    .header__block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header {
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+    }
+
+    &__call {
+        color: rgb(69, 79, 91);
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 21px;
+
+        &::before {
+            content: url('/img/header_call.svg');
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        transition: all 0.2s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+
+        a {
+            display: inline-block;
+        }
+    }
+
+    &__link {
+        color: rgb(22, 28, 36);
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        transition: all 0.2s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__select {
+        cursor: pointer;
+        color: rgb(22, 28, 36);
+        border: none;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        transition: all 0.2s ease;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

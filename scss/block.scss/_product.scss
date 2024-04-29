@@ -1,0 +1,339 @@
+.product {
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+    &__idf {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 40px;
+
+        span {
+            opacity: 0.7;
+        }
+    }
+
+    &__title {
+        display: flex;
+        align-items: end;
+        gap: 12px;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 42px;
+    }
+
+    &__count {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 28px;
+        margin-bottom: 3px;
+    }
+}
+
+
+.product {
+    &__title_block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 22px;
+        width: 400px;
+        border: 3px solid #4295E4;
+
+        input {
+            outline: none;
+            background: rgba(0, 0, 0, 0.03);
+            padding: 15px 0 15px 32px;
+            border-radius: 24px 0 0 24px;
+            border: none;
+            width: 100%;
+        }
+
+        button {
+            cursor: pointer;
+            border-radius: 0 18px 18px 0;
+            padding: 10.5px 14px 10.5px 14px;
+            border: none;
+            background-color: #4295E4;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+        }
+    }
+}
+
+.product__content {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 30px;
+}
+
+.product__top_text {
+    color: rgb(22, 28, 36);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+
+    &::after {
+        content: url('/img/product-x.svg');
+        margin-left: 8px;
+        vertical-align: middle;
+        display: inline-block;
+        margin-top: 2px;
+    }
+}
+
+.product__cards_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;
+}
+
+.product__top_select {
+    width: 145px;
+    border: none;
+}
+
+.product__top_select__block {
+    display: inline-block;
+    border: 1px solid rgb(196, 205, 213);
+    padding: 7px 16px;
+    color: rgb(22, 28, 36);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    cursor: pointer;
+}
+
+.product__filter_btn {
+    border: 1px solid rgb(173, 215, 255);
+    background: rgb(255, 255, 255);
+    padding: 7px 0;
+    width: 100%;
+    color: rgb(22, 28, 36);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 32px;
+    cursor: pointer;
+}
+
+.product__filter_box {
+    width: 100%;
+    padding: 24px;
+    border: 1px solid rgb(196, 205, 213);
+    border-radius: 2px;
+    background: rgb(255, 255, 255);
+}
+
+.product__filter_title {
+    color: rgb(22, 28, 36);
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.product__filter_item {
+    border-bottom: 1px solid rgb(237, 237, 237);
+}
+
+.product__filter_select {
+    padding: 16px 0;
+    border: none;
+    width: 100%;
+}
+
+.product__cards_bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+.product__card {
+    position: relative;
+}
+
+.product__cap_block {
+    padding: 17px 12px 0 12px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+.product__cap_list {
+    display: flex;
+}
+
+.product__avail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.product__prize {
+    padding: 6px 8px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+    background: rgb(255, 255, 255);
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.product__prize_text {
+    display: inline-block;
+    margin-left: 6px;
+    color: rgb(22, 28, 36);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+}
+
+.product__cap_item:last-child {
+    margin-left: auto;
+}
+
+.product__sale_text {
+    display: inline-block;
+    color: rgb(22, 28, 36);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    padding: 8px 10px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+    background: rgb(255, 255, 255);
+}
+
+.product__card_content {
+    padding: 10px 12px;
+    box-shadow: inset -1px 0px 0px 0px rgb(234, 234, 234), inset 1px 0px 0px 0px rgb(234, 234, 234), inset 0px -1px 0px 0px rgb(234, 234, 234);
+    background: rgb(255, 255, 255);
+}
+
+.product__rate_img {
+    display: inline-block;
+
+    img {
+        vertical-align: middle;
+    }
+}
+
+.product__rate_block {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.product__rate_text {
+    color: rgb(69, 79, 91);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.product__card_des {
+    margin-bottom: 10px;
+    color: rgb(69, 79, 91);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.product__card_price {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.product__card_real_price {
+    color: rgb(22, 28, 36);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.product__card_old_price {
+    color: rgb(69, 79, 91);
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 21px;
+    text-decoration-line: line-through;
+}
+
+.product__page_btn_box {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.product__page_btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: rgb(24, 24, 24);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    background-color: transparent;
+    margin-right: 8px;
+    transition: all 0.2s ease;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        box-shadow: inset -1px 0px 0px 0px rgb(234, 234, 234), inset 1px 0px 0px 0px rgb(234, 234, 234), inset 0px -1px 0px 0px rgb(234, 234, 234), inset 0px 1px 0px 0px rgb(234, 234, 234);
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        background: rgb(66, 149, 228);
+    }
+
+    &:active {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        text-align: center;
+        background: rgb(66, 149, 228);
+    }
+}
+
+
+.search__result {
+    display: none;
+    width: 365px;
+    position: absolute;
+    border-radius: 0 0 8px 8px;
+    padding: 20px 15px;
+    margin-left: 16px;
+    height: auto;
+    background-color: #fff;
+    box-shadow: 0px 12px 24px 0px rgba(5, 16, 55, 0.1);
+}

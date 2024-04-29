@@ -1,0 +1,62 @@
+.form {
+    background: rgb(242, 248, 255);
+    padding: 64px 0 56px 0;
+
+    &__block {
+        max-width: 750px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    &__content {
+        padding: 0 115px;
+        margin-bottom: 24px;
+    }
+
+    &__title {
+        margin-bottom: 24px;
+        color: rgb(22, 28, 36);
+        font-size: 44px;
+        font-weight: 600;
+        line-height: 62px;
+    }
+
+    &__text {
+        color: rgb(69, 79, 91);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    &__box {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+    }
+
+    &__input {
+        background: rgba(22, 28, 36, 0.04);
+        padding: 12px 16px;
+        border: none;
+        outline: none;
+
+        &::placeholder {
+            color: rgb(69, 79, 91);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 26px;
+        }
+    }
+
+    &__btn {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 26px;
+        padding: 12px 70px;
+        background: rgb(66, 149, 228);
+        border: none;
+        cursor: pointer;
+    }
+}

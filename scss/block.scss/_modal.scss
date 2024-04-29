@@ -1,0 +1,174 @@
+.modal {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__content {
+    width: 840px;
+    background: rgb(255, 255, 255);
+}
+
+.modal__title_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 40px;
+    border-bottom: 1px solid rgb(234, 234, 234);
+}
+
+.modal__title {
+    color: rgb(22, 28, 36);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.modal__close {
+    cursor: pointer;
+    color: rgb(24, 24, 24);
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.modal__block {
+    padding: 24px 40px 70px 40px;
+}
+
+.modal__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__top_content {
+    display: flex;
+    gap: 12px;
+}
+
+.modal__top_img_block {
+    width: 136px;
+    height: 120px;
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.modal__bottom {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.modal__order_btn {
+    cursor: pointer;
+    border: none;
+    padding: 10px 64px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    background: rgb(66, 149, 228);
+    margin-top: 8px;
+}
+
+.modal__top_cap {
+    color: rgb(69, 79, 91);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.modal__top_cap_link {
+    color: rgb(66, 149, 228);
+    text-decoration: underline;
+}
+
+.modal__price_text {
+    color: rgb(22, 28, 36);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.modal__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.modal__top_des {
+    color: rgb(22, 28, 36);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 4px;
+}
+
+.modal__buy_btn {
+    cursor: pointer;
+    padding: 10px 24px;
+    border: 1px solid rgb(173, 215, 255);
+    color: rgb(22, 28, 36);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.modal__idf_btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal__price_text{
+    text-align: right;
+}
+
+.modal__index_block{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.modal__index_idf {
+    padding: 5px 22px;
+    border: 1px solid rgb(234, 234, 234);
+    background: rgb(255, 255, 255);
+}
+
+.modal__del_btn {
+    cursor: pointer;
+    color: rgb(66, 149, 228);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    border: none;
+    background-color: transparent;
+
+    &::before {
+        content: url("/img/moadal-del.svg");
+        display: inline-block;
+        margin-top: 4px;
+        vertical-align: middle;
+        margin-right: 12px;
+    }
+}
+
+.modal__index_block{
+    margin-top: 34px;
+}
+
+.modal__total_text{
+    display: inline-block;
+    margin-left: 8px;
+}

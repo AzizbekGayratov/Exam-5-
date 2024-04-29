@@ -1,0 +1,25 @@
+.recent__cards_block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.recent__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.recent__title {
+    color: rgb(22, 28, 36);
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 62px;
+}
+
+.recent__icon_box{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
